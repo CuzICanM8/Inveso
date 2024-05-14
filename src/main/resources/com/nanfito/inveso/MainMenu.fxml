@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2c2c2c;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nanfito.inveso.MainMenuController">
+    <children>
+        <!-- StackPane to center the VBox -->
+        <StackPane layoutX="100.0">
+            <!-- Vertical Box to hold all the content -->
+            <VBox alignment="CENTER" spacing="20" style="-fx-padding: 50px; -fx-background-color: #2c2c2c;">
+
+                <!-- Slogan -->
+                <Label style="-fx-font-size: 24px; -fx-text-fill: #ffffff;" text="Inveso: Invest with Insight" />
+
+                <!-- Search Field -->
+                <TextField fx:id="searchField" promptText="Enter stock ticker..." style="-fx-pref-width: 300px;" />
+
+                <!-- Suggestions ListView -->
+                <ListView fx:id="suggestionsListView" style="-fx-pref-width: 300px; -fx-background-color: #2c2c2c; -fx-background: #2c2c2c; -fx-text-fill: #ffffff; -fx-padding: 0;" visible="false" />
+
+
+
+            </VBox>
+        </StackPane>
+    </children>
+</Pane>
